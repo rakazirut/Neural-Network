@@ -61,7 +61,7 @@ if __name__ == "__main__":
     trainingSetOutput = array([[0, 1, 1, 0, 0, 1]]).T
 
     # train the neural network using a training set
-    # do it 10000 times and make small adjustments each time
+    # do it 20000 times and make small adjustments each time
     neuralNetwork.train(trainingSetInput, trainingSetOutput, 20000)
 
     print("New synaptic weights after training: ")
