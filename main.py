@@ -57,12 +57,12 @@ if __name__ == "__main__":
     print(neuralNetwork.synapticWeights)
 
     # The training set. WWe have 4 examples, each consisting of 3 input values and 1 output value
-    trainingSetInput = array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]])
-    trainingSetOutput = array([[0, 1, 1, 0]]).T
+    trainingSetInput = array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 0], [0, 0, 0], [1, 1, 0]])
+    trainingSetOutput = array([[0, 1, 1, 0, 0, 1]]).T
 
     # train the neural network using a training set
     # do it 10000 times and make small adjustments each time
-    neuralNetwork.train(trainingSetInput, trainingSetOutput, 10000)
+    neuralNetwork.train(trainingSetInput, trainingSetOutput, 20000)
 
     print("New synaptic weights after training: ")
     print(neuralNetwork.synapticWeights)
