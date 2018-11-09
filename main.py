@@ -70,38 +70,3 @@ if __name__ == "__main__":
     # Test the neural network with a new situation
     print("Considering new situation [1, 0, 0] -> ?: ")
     print(neuralNetwork.think(array([1, 0, 0])))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
